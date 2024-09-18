@@ -1,6 +1,9 @@
 [build]
 publish = "site/dist/"
-command = "npm run install_trunk && npm run build"
+command = "rustup toolchain install nightly && rustup target add wasm32-unknown-unknown && npm run install_trunk && npm run build"
+
+[build.environment]
+RUST_VERSION = "1.81.0"
 
 [[redirects]]
 from = "/*"
