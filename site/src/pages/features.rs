@@ -6,7 +6,7 @@ use crate::sections::features::Features;
 #[component]
 pub fn FeaturesPage() -> impl IntoView {
     view! {
-        <Title text="Leptos + Tailwindcss | Counter"/>
+        <Title text="Ferrumc | Features"/>
         <main>
             <div class="flex flex-col min-h-screen">
                 <div class="flex flex-col items-center max-lg:px-6 justify-start min-h-[calc(100vh-80px)] pt-[80px]">
